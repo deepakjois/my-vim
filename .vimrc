@@ -16,6 +16,9 @@ set incsearch                   " incremental searching
 set ignorecase                  " searches are case insensitive...
 set smartcase                   " ... unless they contain at least one capital letter
 
+"" Buffers
+set hidden
+
 "" Pathogen
 call pathogen#infect()
 
@@ -26,3 +29,29 @@ set wildignore+=,.DS_Store,*.hi,*.o
 "" Solarized
 set background=dark
 colorscheme solarized
+
+"" Haskell
+" Configure browser for haskell_doc.vim
+let g:haddock_browser = "open"
+let g:haddock_browser_callformat = "%s %s"
+
+"" Org-mode
+let g:org_heading_shade_leading_stars = 1
+
+" on OS X, this leads to using system clipboard
+set clipboard+=unnamed
+
+" Source the vimrc file after saving it
+if has("autocmd")
+  autocmd bufwritepost .vimrc source $MYVIMRC
+endif
+
+let mapleader = ","
+nmap <leader>v :edit $MYVIMRC<CR>
+
+" highlight current column and row
+set cursorline
+set cursorcolumn
+highlight CursorLine cterm=NONE ctermbg=blue
+highlight CursorColumn cterm=NONE ctermbg=blue
+
