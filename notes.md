@@ -24,7 +24,7 @@
 
 * `V` for linewise visual mode
 * `o` for changing the free end of the cursor
-* Not directly related, but `gU{motoion}` uppercases the {motion} text uppercase
-* `Vr{char}` is a good way to select a line and replace all characters with {char}
+* Not directly related, but `gU{motoion}` uppercases the `{motion}` text.
+* `Vr{char}` is a good way to select a line and replace all characters with `{char}`
 * `I` and `A` are your friends when editing ragged visual blocks
 
