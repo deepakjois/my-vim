@@ -60,3 +60,14 @@ nnoremap <c-j> <c-w>j
 nnoremap <c-k> <c-w>k
 nnoremap <c-h> <c-w>h
 nnoremap <c-l> <c-w>l
+
+" Bubble single lines
+nmap <C-Up> [e
+nmap <C-Down> ]e
+
+" Bubble multiple lines
+vmap <C-Up> [egv
+vmap <C-Down> ]egv
+
+" remap <Esc>
+imap jj <Esc>
