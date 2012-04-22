@@ -17,7 +17,7 @@
 * `C-h`, `C-w` and `C-u` for deleting char, word and line
 * `C-o` is Insert Normal mode where u can fire a single command
 * `<C-o>zz` allows you to center the line on the screen visually
-* We can press `<C-r>0` to paste the text that we just yanked at the current cursor position
+* We can press `<C-r>0` in insert mode to paste the text that we just yanked at the current cursor position
 * `<C-r>=` allows you to perform simple calculations
 
 ### Chapter 4 : Visual Mode
