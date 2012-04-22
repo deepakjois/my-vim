@@ -45,3 +45,18 @@
 
 * `[b` and `]b` from the vim-unimpaired plugin can be smoother to type for
   switching between buffers than `bn` and `bp`.
+
+### Chapter 7 : Open files and save them to disk
+
+* `:edit %<Tab>` and `:edit %:h<Tab>` expand out the filepath for the active buffer.
+* `:E` is shorthand for `:Explore`
+
+### Chapter 11 : Macros
+
+*TODO* : Read the section about editing macros again.
+
+* Inspect the contents of a register (for example `a`) by typing `:reg a`
+* The @{register} command executes the contents of the specified register.
+* The :argdo command allows us to execute an Ex command once for each buffer in the argument list.
+
+
