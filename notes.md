@@ -28,3 +28,15 @@
 * `Vr{char}` is a good way to select a line and replace all characters with `{char}`
 * `I` and `A` are your friends when editing ragged visual blocks
 
+### Chapter 5 : Commandline mode
+
+* `:3d` is a an Ex command that is faster than its normal mode equivalent `3Gdd`
+* Some ways to specify ranges : `:{start},{end}`, `%` (stands for entire file), `.` (current file)
+* `:'<,'>` is pre-populated when we press the `:` key after a visual selection.
+* The `'<` symbol is a mark standing for the first line of the visual selection, while `'>` stands for the last line of the visual selection
+* Vim also accepts a pattern as an address for an Ex command. For example: `:/<html>/,/<\/html>/p`
+* General form of the offset: `:{address}+n`, for e.g. `:/<html>/+1,/<\/html>/-1p`
+* Ranges summarised on page 60
+* General syntax of copy is `:[range]t {address}`
+* General syntax of move is `:[range]m {address}`
+* At Vim’s command line, the `<C-r><C-w>` mapping copies the word under the cursor and inserts it at the command-line prompt. Useful for find operations.
