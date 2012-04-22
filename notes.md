@@ -8,7 +8,7 @@
 ### Chapter 2 : Normal Mode
 
 * `daw` is more composable than `bdw` and `dbx`
-* `<C-a>` and `<C-x>` can be used to do simple arithmetic 
+* `<C-a>` and `<C-x>` can be used to do simple arithmetic
 * Operator + Motion = Action : Page 25 for all operators.
 
 
@@ -40,3 +40,8 @@
 * General syntax of copy is `:[range]t {address}`
 * General syntax of move is `:[range]m {address}`
 * At Vim’s command line, the `<C-r><C-w>` mapping copies the word under the cursor and inserts it at the command-line prompt. Useful for find operations.
+
+### Chapter 6 : Manage multiple files
+
+* `[b` and `]b` from the vim-unimpaired plugin can be smoother to type for
+  switching between buffers than `bn` and `bp`.
