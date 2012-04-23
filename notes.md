@@ -53,10 +53,17 @@
 
 ### Chapter 11 : Macros
 
-*TODO* : Read the section about editing macros again.
+**TODO** : Read the section about editing macros again.
 
 * Inspect the contents of a register (for example `a`) by typing `:reg a`
 * The @{register} command executes the contents of the specified register.
 * The :argdo command allows us to execute an Ex command once for each buffer in the argument list.
 
+### Chapter 12 : Matching Patterns and Literals
+
+**TODO** Revisit this chapter once you have had more experience searching.
+
+* `\v` for `nomagic` search
+* `\V` for verbatim search
+* In a very magic search, the naked < and > characters are interpreted as word delimeters. For e.g, `/\v<the>` matches `the` but not `their`.
 
