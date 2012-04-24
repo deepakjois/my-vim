@@ -67,3 +67,11 @@
 * `\V` for verbatim search
 * In a very magic search, the naked < and > characters are interpreted as word delimeters. For e.g, `/\v<the>` matches `the` but not `their`.
 
+### Chapter 13 : Search
+
+* `:set nohlsearch` disables highlighting entirely. `:nohlsearch` can be used
+  to mute highlighting temporarily.
+* Search offset feature. `/<search keyword>/e` places the cursor at the end of
+  the match when we navigate to it using `N` or `n`.
+* `:%s//` will execute a substitution in the context of the previous search. So
+  we can provide it with a substitution string, captures etc.
