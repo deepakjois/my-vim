@@ -23,8 +23,10 @@ set hidden
 call pathogen#infect()
 
 "" ctrl-p
-set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*/_cache/*,*/.git/*,*/.svn/*,*/.hg/*,*/_darcs/*
-set wildignore+=,.DS_Store,*.hi,*.o
+"set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*/_cache/*,*/.svn/*,*/.hg/*,*/_darcs/*
+"set wildignore+=,.DS_Store,*.hi,*.o
+let g:ctrlp_custom_ignore = '\.git$\|\.hg$\|\.svn$\|_darcs'
+
 
 "" Solarized
 set background=dark
