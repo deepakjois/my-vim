@@ -46,6 +46,8 @@
 * `[b` and `]b` from the vim-unimpaired plugin can be smoother to type for
   switching between buffers than `bn` and `bp`.
 
+* `<C-^>` is a great way to navigate to last used buffer.
+
 ### Chapter 7 : Open files and save them to disk
 
 * `:edit %<Tab>` and `:edit %:h<Tab>` expand out the filepath for the active buffer.
