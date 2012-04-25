@@ -77,3 +77,19 @@
   the match when we navigate to it using `N` or `n`.
 * `:%s//` will execute a substitution in the context of the previous search. So
   we can provide it with a substitution string, captures etc.
+
+### Chapter 14 : Substitution
+
+* Substitute command : `:[range]s[ubstitute]/{pattern}/{string}/[flags]`
+* `~` in the replacement field, is a special character which denotes the string
+  from previous invocatin of substitute
+* Leaving the search field of the substitute command blank instructs Vim to
+  reuse the most recent search pattern. This tech- nique allows us to decouple
+  two tasks: composing a (complex) pattern, and devising a suitable replacement
+  string
+* Suppose that we’ve yanked a multiline selection of text, and it’s stored in
+  register 0. Now we want to use that text as the replacement field of the 
+  substitute command. We could do so by running this: `:%s//\=@0/g`
+* `/\v(<man>|<dog>)` and `:%s//\={"dog":"man","man":"dog"}[submatch(1)]/g` lead
+  to a substitution where `dog` is replaced by `man`, and `man` is replaced by
+  `dog`
