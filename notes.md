@@ -93,3 +93,14 @@
 * `/\v(<man>|<dog>)` and `:%s//\={"dog":"man","man":"dog"}[submatch(1)]/g` lead
   to a substitution where `dog` is replaced by `man`, and `man` is replaced by
   `dog`
+
+### Chapter 15 : Global commands
+
+* `:g//d` deletes all lines in buffer matching last line.
+* `:v/href/d` does the opposite of `g` above. It deletes all lines that do no
+  match the pattern specified.
+* `print` is the default command that is used by `:global` if no command is
+  specified. For example, `:g/TODO` will just print all the todo items in the
+  file.
+* `:.+1,/}/-1 sort` - from the next line (`.+1`) to the line preceding the line
+  that matches a closed curly brace (`/}/-1`)
