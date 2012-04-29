@@ -88,7 +88,7 @@
   two tasks: composing a (complex) pattern, and devising a suitable replacement
   string
 * Suppose that we’ve yanked a multiline selection of text, and it’s stored in
-  register 0. Now we want to use that text as the replacement field of the 
+  register 0. Now we want to use that text as the replacement field of the
   substitute command. We could do so by running this: `:%s//\=@0/g`
 * `/\v(<man>|<dog>)` and `:%s//\={"dog":"man","man":"dog"}[submatch(1)]/g` lead
   to a substitution where `dog` is replaced by `man`, and `man` is replaced by
@@ -104,3 +104,37 @@
   file.
 * `:.+1,/}/-1 sort` - from the next line (`.+1`) to the line preceding the line
   that matches a closed curly brace (`/}/-1`)
+
+### Chapter 16 : Index and navigate source code with ctags
+
+* On OS X do : `brew install ctags`, on Linux : `sudo apt-get install exuberant-ctags`
+* Effortless ctags with git : http://tbaggery.com/2011/08/08/effortless-ctags-with-git.html
+* Instead of `<C-]>`, we could use the `g<C-]>` command. Both of these commands
+  behave identically in the case when the current keyword has only a single match.
+  But if it has multiple matches, then the `g<C-]>` command presents us with a list
+  of choices from the tag matchlist.
+* Nice table on Page 215 listing all commands related to tags.
+
+### Chapter 17
+
+* Set a custom compiler using `:setlocal makeprg=NODE_DISABLE_COLORS=1\
+  nodelint\ %`
+* Here is a sample `errorformat` string to parse nodejs output:
+  `:setlocal efm=%A%f\,\ line\ %l\,\ character\ %c:%m,%Z%.%#,%-G%.%#`
+* We could also setup a shortcut like `:compiler nodelint`, if we have the
+  following in `quickfix/ftplugin.javascript.vim`
+
+```
+setlocal makeprg=NODE_DISABLE_COLORS=1\ nodelint\ %
+   let &l:efm='%A'
+   let &l:efm.='%f\, '
+   let &l:efm.='line %l\, '
+   let &l:efm.='character %c:'
+   let &l:efm.='%m' . ','
+   let &l:efm.='%Z%.%#' . ','
+   let &l:efm.='%-G%.%#'
+```
+
+* `:args $VIMRUNTIME/compiler/*.vim` to familiarize yourself with the plugins
+  that are distributed with Vim by running the command.
+
