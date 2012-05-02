@@ -115,7 +115,7 @@
   of choices from the tag matchlist.
 * Nice table on Page 215 listing all commands related to tags.
 
-### Chapter 17
+### Chapter 17 : Compile code and navigate errors with the quickfix list
 
 * Set a custom compiler using `:setlocal makeprg=NODE_DISABLE_COLORS=1\
   nodelint\ %`
@@ -137,4 +137,37 @@ setlocal makeprg=NODE_DISABLE_COLORS=1\ nodelint\ %
 
 * `:args $VIMRUNTIME/compiler/*.vim` to familiarize yourself with the plugins
   that are distributed with Vim by running the command.
+
+### Chapter 18 : Search projectwide with grep, vimgrep, and others
+
+* Install ack-vim: https://github.com/mileszs/ack.vim
+* `vimgrep` integrates nicely with Vim's inbuilt search
+
+## Chapter 19 : Dial ‘X’ for auto-completion
+
+* Page 237 has all the shortcuts related to auto-completion
+* `<C-e>` reverts to the originally typed text (exit from auto-completion) 
+* `<C-x><C-l>` triggers linewise auto-completion which might be useful when coding.
+
+## Chapter 20 : Find and fix typos with Vim’s spell checker
+
+* `:set spell` sets spell checker mode
+* We can jump backwards and forwards between flagged words with the `[s` and
+  `]s` commands, respectively, and use `z=` to suggest a list of corrections
+* Nice summary on page 249
+* We could fix the error from Insert mode using the `<C-x>s` com- mand, which
+  triggers a special form of auto-completion
+
+## Appendix 1 : Customizing Vim to suit your preferences
+
+Here is a way to customize the indentation for different file types:
+
+```
+if has("autocmd")
+        filetype on
+        autocmd FileType ruby setlocal ts=2 sts=2 sw=2 et
+        autocmd FileType javascript setlocal ts=4 sts=4 sw=4 noet
+endif
+```
+
 
