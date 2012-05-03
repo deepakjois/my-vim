@@ -53,6 +53,34 @@
 * `:edit %<Tab>` and `:edit %:h<Tab>` expand out the filepath for the active buffer.
 * `:E` is shorthand for `:Explore`
 
+### Chapter 9 : Copy and paste
+
+* Cut, Copy and Paste => Delete, Yank and Put
+* Taken together, the `xp` commands can be considered as: ‘transpose the next
+  two characters.’
+* The `ddp` sequence could be considered to stand for: transpose the order of
+  this line and its successor.
+* `yyp` can be used to duplicate a line
+* It can be very useful to understand the difference between `p` and `P` in
+  actual practise. `p` puts *after* the cursor and `P` *in front of* the
+cursor.
+* The delete, yank, and put commands all interact with one of Vim’s registers.
+  We can specify which register we want to use by prefixing the command with
+`"{register}`. If we don’t specify a register, then Vim will use the unnamed
+register.
+* `"%` register contains name of the current file. Information about other such
+  read only registers can be found in `:h quote`.
+* `"+` refers to the system clipboard.
+* When we use the `p` command in Visual mode, Vim replaces the selection with the
+  contents of the specified register.
+* Swap two words example on page 129 is a good example of using marks. I like
+  the technique of using `mm` to use `m` as the mark register to save some
+  typing.
+* `gp` and `gP` leave the cursor after the new text.
+* `:set paste` is the best solution to all those times that I had problems with
+  pasting text in Vim when using it in terminal. It can be made even easier by
+  using something like `set pastetoggle=<F5>`.
+
 ### Chapter 11 : Macros
 
 **TODO** : Read the section about editing macros again.
@@ -146,7 +174,7 @@ setlocal makeprg=NODE_DISABLE_COLORS=1\ nodelint\ %
 ## Chapter 19 : Dial ‘X’ for auto-completion
 
 * Page 237 has all the shortcuts related to auto-completion
-* `<C-e>` reverts to the originally typed text (exit from auto-completion) 
+* `<C-e>` reverts to the originally typed text (exit from auto-completion)
 * `<C-x><C-l>` triggers linewise auto-completion which might be useful when coding.
 
 ## Chapter 20 : Find and fix typos with Vim’s spell checker
