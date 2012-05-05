@@ -171,13 +171,13 @@ setlocal makeprg=NODE_DISABLE_COLORS=1\ nodelint\ %
 * Install ack-vim: https://github.com/mileszs/ack.vim
 * `vimgrep` integrates nicely with Vim's inbuilt search
 
-## Chapter 19 : Dial ‘X’ for auto-completion
+### Chapter 19 : Dial ‘X’ for auto-completion
 
 * Page 237 has all the shortcuts related to auto-completion
 * `<C-e>` reverts to the originally typed text (exit from auto-completion)
 * `<C-x><C-l>` triggers linewise auto-completion which might be useful when coding.
 
-## Chapter 20 : Find and fix typos with Vim’s spell checker
+### Chapter 20 : Find and fix typos with Vim’s spell checker
 
 * `:set spell` sets spell checker mode
 * We can jump backwards and forwards between flagged words with the `[s` and
@@ -186,7 +186,7 @@ setlocal makeprg=NODE_DISABLE_COLORS=1\ nodelint\ %
 * We could fix the error from Insert mode using the `<C-x>s` com- mand, which
   triggers a special form of auto-completion
 
-## Appendix 1 : Customizing Vim to suit your preferences
+### Appendix 1 : Customizing Vim to suit your preferences
 
 Here is a way to customize the indentation for different file types:
 
