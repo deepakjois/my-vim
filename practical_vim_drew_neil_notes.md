@@ -31,7 +31,7 @@
 ### Chapter 5 : Commandline mode
 
 * `:3d` is a an Ex command that is faster than its normal mode equivalent `3Gdd`
-* Some ways to specify ranges : `:{start},{end}`, `%` (stands for entire file), `.` (current file)
+* Some ways to specify ranges : `:{start},{end}`, `%` (stands for entire file), `.` (current line)
 * `:'<,'>` is pre-populated when we press the `:` key after a visual selection.
 * The `'<` symbol is a mark standing for the first line of the visual selection, while `'>` stands for the last line of the visual selection
 * Vim also accepts a pattern as an address for an Ex command. For example: `:/<html>/,/<\/html>/p`
