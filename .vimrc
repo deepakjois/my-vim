@@ -24,7 +24,7 @@ call pathogen#infect()
 
 "" ctrl-p
 let g:ctrlp_custom_ignore = '\.git$\|\.hg$\|\.svn$\|_darcs'
-
+let g:ctrlp_open_new_file = 'v'
 
 "" Solarized
 set background=dark
