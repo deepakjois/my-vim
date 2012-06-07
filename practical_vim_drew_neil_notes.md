@@ -53,7 +53,37 @@
 * `:edit %<Tab>` and `:edit %:h<Tab>` expand out the filepath for the active buffer.
 * `:E` is shorthand for `:Explore`
 
-### Chapter 9 : Copy and paste
+### Chapter 8 : Get around faster
+
+* An interesting motion command hack: Instead of searching for the first
+  character of the word and using `dw`, search for a character in the middle of
+  the word and use `daw`. This is useful if the first character of the word is
+  too common, but there are other characters that are uncommon. For e.g. the word
+  _excellent_, where `e` is common, but `x` is uncommon.
+* The search command is an _exclusive_ motion. This means that searching for a
+  string will place the cursor _before_ the string if it matches. This is useful
+  in combining the `d{motion}` operator with the search motion, to delete
+  portions of text.
+* `vi{` : Select text inside the `{}` block.
+
+### Chapter 9 : Navigate between files with jumps
+
+* In web browsers, we’re used to using the back button to return to pages that
+  we visited earlier. Vim provides a similar feature by way of the jump list:
+the `<C-o>` command is like the back button, while the complementary `<C-i>`
+com- mand is like the forward button.
+* Table of jumps. Refer to it if you need to find the different kind of jumps.
+* Using the `g;` and `g,` commands, we can traverse backwards and forwards
+  through the changelist (`:h changelist`). As a memory aid for `g;` and `g,`,
+it may help to remember that the `;` and `,` commands can be used to repeat or
+reverse the `f{char}` command.
+* `\`.` marks the position of last change.
+* `\`^` marks the positions of last change.
+* We need somehow to instruct Vim to modify the filepath under the cursor by
+  appending the .rb file extension before attempting to open it. We can do 
+  this with the `suffixesadd` option.
+
+### Chapter 10 : Copy and paste
 
 * Cut, Copy and Paste => Delete, Yank and Put
 * Taken together, the `xp` commands can be considered as: ‘transpose the next
