@@ -71,3 +71,18 @@ vmap <C-Down> ]egv
 
 " remap <Esc>
 imap jj <Esc>
+
+" Insert a single character : http://vim.wikia.com/wiki/Insert_a_single_character
+:nnoremap s :exec "normal i".nr2char(getchar())."\e"<CR>
+:nnoremap S :exec "normal a".nr2char(getchar())."\e"<CR>
+
+" VimCasts #14: The :edit command
+cnoremap %% <C-R>=expand('%:h').'/'<cr>
+map <leader>ew :e %%
+map <leader>es :sp %%
+map <leader>ev :vsp %%
+map <leader>et :tabe %%
+
+
+" Don't show tab bar
+set showtabline=0
