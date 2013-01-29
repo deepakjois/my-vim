@@ -65,6 +65,8 @@
   in combining the `d{motion}` operator with the search motion, to delete
   portions of text.
 * `vi{` : Select text inside the `{}` block.
+* `mm` and `m\`` to mark something and snap back to it.
+* Upper case letters create global marks. You could use them to jump between files.
 
 ### Chapter 9 : Navigate between files with jumps
 
