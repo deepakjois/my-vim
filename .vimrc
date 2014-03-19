@@ -22,6 +22,9 @@ set smartcase                   " ... unless they contain at least one capital l
 "" Buffers
 set hidden
 
+"" Line numbers
+set number
+
 "" Pathogen
 call pathogen#infect()
 
@@ -32,6 +35,10 @@ let g:ctrlp_open_new_file = 'v'
 "" Solarized
 set background=dark
 colorscheme solarized
+
+" Clear vertical bar
+set fillchars+=vert:\│
+hi clear VertSplit
 
 "" Haskell
 " Configure browser for haskell_doc.vim
@@ -123,3 +130,6 @@ set wildmenu
 set wildmode=full
 
 let g:netrw_liststyle=3 " Use tree-mode as default view
+
+" Easier way to turn off search highlighting
+nnoremap <silent> <C-l> :<C-u>nohlsearch<CR><C-l>
