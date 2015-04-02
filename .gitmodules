@@ -10,6 +10,9 @@
 [submodule "bundle/vim-orgmode"]
 	path = bundle/vim-orgmode
 	url = https://github.com/jceb/vim-orgmode.git
+[submodule "bundle/vim-go"]
+	path = bundle/vim-go
+	url = https://github.com/fatih/vim-go.git 
 [submodule "bundle/vim-unimpaired"]
 	path = bundle/vim-unimpaired
 	url = https://github.com/tpope/vim-unimpaired.git

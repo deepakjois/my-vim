@@ -26,7 +26,7 @@ set hidden
 set number
 
 "" Pathogen
-call pathogen#infect()
+execute pathogen#infect()
 
 "" ctrl-p
 let g:ctrlp_custom_ignore = '\.git$\|\.hg$\|\.svn$\|_darcs'
