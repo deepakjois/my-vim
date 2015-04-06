@@ -133,3 +133,5 @@ let g:netrw_liststyle=3 " Use tree-mode as default view
 
 " Easier way to turn off search highlighting
 nnoremap <silent> <C-l> :<C-u>nohlsearch<CR><C-l>
+
+let g:pandoc#modules#disabled = ["folding"]
