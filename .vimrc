@@ -29,7 +29,8 @@ set number
 execute pathogen#infect()
 
 "" ctrl-p
-let g:ctrlp_custom_ignore = '\.git$\|\.hg$\|\.svn$\|_darcs'
+let g:ctrlp_custom_ignore = '\.git$\|\.hg$\|\.svn$\|_darcs\|_site'
+let g:ctrlp_working_path_mode = 'ra'
 let g:ctrlp_open_new_file = 'v'
 
 "" Solarized
@@ -88,8 +89,8 @@ vmap <C-Down> ]egv
 imap jj <Esc>
 
 " Insert a single character : http://vim.wikia.com/wiki/Insert_a_single_character
-:nnoremap s :exec "normal i".nr2char(getchar())."\e"<CR>
-:nnoremap S :exec "normal a".nr2char(getchar())."\e"<CR>
+":nnoremap s :exec "normal i".nr2char(getchar())."\e"<CR>
+":nnoremap S :exec "normal a".nr2char(getchar())."\e"<CR>
 
 " VimCasts #14: The :edit command
 cnoremap %% <C-R>=expand('%:h').'/'<cr>
@@ -140,3 +141,6 @@ let g:netrw_liststyle=3 " Use tree-mode as default view
 nnoremap <silent> <C-l> :<C-u>nohlsearch<CR><C-l>
 
 let g:pandoc#modules#disabled = ["folding", "spell", "bibliographies"]
+
+" format with goimports instead of gofmt
+let g:go_fmt_command = "goimports"
