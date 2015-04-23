@@ -33,6 +33,16 @@ let g:ctrlp_custom_ignore = '\.git$\|\.hg$\|\.svn$\|_darcs'
 let g:ctrlp_open_new_file = 'v'
 
 "" Solarized
+if !has('gui_running')
+    " Compatibility for Terminal
+    let g:solarized_termtrans=1
+    " Make Solarized use 16 colors for Terminal support
+    let g:solarized_termcolors=256
+else
+    " highlight current column and row
+    set cursorline
+    set cursorcolumn
+endif
 set background=dark
 colorscheme solarized
 
@@ -59,11 +69,6 @@ endif
 let mapleader = ","
 nmap <leader>v :edit $MYVIMRC<CR>
 
-" highlight current column and row
-set cursorline
-set cursorcolumn
-" highlight CursorLine cterm=NONE ctermbg=blue
-" highlight CursorColumn cterm=NONE ctermbg=blue
 
 " easier navigation between split windows
 nnoremap <c-j> <c-w>j
