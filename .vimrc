@@ -144,3 +144,7 @@ let g:pandoc#modules#disabled = ["folding", "spell", "bibliographies"]
 
 " format with goimports instead of gofmt
 let g:go_fmt_command = "goimports"
+
+" tweaks to vim-jsx, to work with React
+let g:jsx_ext_required = 0
+let g:jsx_pragma_required = 1
