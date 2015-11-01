@@ -6,7 +6,7 @@ filetype plugin indent on       " load file type plugins + indentation
 
 "" Whitespace
 set nowrap                      " don't wrap lines
-set tabstop=4 shiftwidth=4      " a tab is two spaces (or set this to 4)
+set tabstop=2 shiftwidth=2      " a tab is two spaces (or set this to 4)
 set expandtab                   " use spaces, not tabs (optional)
 set backspace=indent,eol,start  " backspace through everything in insert mode
 
@@ -29,23 +29,15 @@ set number
 execute pathogen#infect()
 
 "" ctrl-p
-let g:ctrlp_custom_ignore = '\.git$\|\.hg$\|\.svn$\|_darcs\|_site'
+let g:ctrlp_custom_ignore = '\.git$\|\.hg$\|\.svn$\|_darcs\|_site\|node_modules'
 let g:ctrlp_working_path_mode = 'ra'
 let g:ctrlp_open_new_file = 'v'
 
-"" Solarized
-if !has('gui_running')
-    " Compatibility for Terminal
-    let g:solarized_termtrans=1
-    " Make Solarized use 16 colors for Terminal support
-    let g:solarized_termcolors=256
-else
-    " highlight current column and row
-    set cursorline
-    set cursorcolumn
-endif
 set background=dark
-colorscheme solarized
+colorscheme base16-solarized
+
+set cursorline
+set cursorcolumn
 
 " Clear vertical bar
 set fillchars+=vert:\│
@@ -145,3 +137,7 @@ let g:pandoc#modules#disabled = ["folding", "spell", "bibliographies"]
 " format with goimports instead of gofmt
 let g:go_fmt_command = "goimports"
 
+" ragtag
+inoremap <M-o>       <Esc>o
+inoremap <C-j>       <Down>
+let g:ragtag_global_maps = 1
