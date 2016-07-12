@@ -34,7 +34,7 @@ let g:ctrlp_working_path_mode = 'ra'
 let g:ctrlp_open_new_file = 'v'
 
 set background=dark
-colorscheme base16-solarized
+colorscheme base16-solarized-dark
 
 set cursorline
 set cursorcolumn
@@ -131,8 +131,6 @@ let g:netrw_liststyle=3 " Use tree-mode as default view
 
 " Easier way to turn off search highlighting
 nnoremap <silent> <C-l> :<C-u>nohlsearch<CR><C-l>
-
-let g:pandoc#modules#disabled = ["folding", "spell", "bibliographies"]
 
 " format with goimports instead of gofmt
 let g:go_fmt_command = "goimports"
