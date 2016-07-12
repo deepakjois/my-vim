@@ -141,3 +141,5 @@ let g:go_fmt_command = "goimports"
 inoremap <M-o>       <Esc>o
 inoremap <C-j>       <Down>
 let g:ragtag_global_maps = 1
+
+let g:jsx_ext_required=0
