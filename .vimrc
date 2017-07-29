@@ -53,7 +53,7 @@ let g:haddock_browser_callformat = "%s %s"
 let g:org_heading_shade_leading_stars = 1
 
 " on OS X, this leads to using system clipboard
-set clipboard+=unnamed
+" set clipboard+=unnamed
 
 " Source the vimrc file after saving it
 if has("autocmd")
