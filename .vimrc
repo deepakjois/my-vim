@@ -33,8 +33,9 @@ let g:ctrlp_custom_ignore = '\.git$\|\.hg$\|\.svn$\|_darcs\|_site\|node_modules'
 let g:ctrlp_working_path_mode = 'ra'
 let g:ctrlp_open_new_file = 'v'
 
+set t_Co=256
 set background=dark
-colorscheme base16-solarized-dark
+colorscheme solarized
 
 set cursorline
 set cursorcolumn
