@@ -25,6 +25,19 @@ set hidden
 "" Line numbers
 set number
 
+" Courtesy - https://github.com/DanToml/Dotfiles/blob/master/.vimrc
+" Integrate with system keyboard on Unix Systems.
+"" On macOS, this is the unnamed pasteboard, on other unix systems this is +
+if has("unix")
+  let s:uname = system("uname")
+  if s:uname == "Darwin\n"
+    set clipboard=unnamed
+  else
+    set clipboard=unnamedplus
+  endif
+endif
+
+
 "" Pathogen
 execute pathogen#infect()
 
