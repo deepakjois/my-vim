@@ -7,9 +7,6 @@
 [submodule "bundle/vim-trailing-whitespace"]
 	path = bundle/vim-trailing-whitespace
 	url = https://github.com/bronson/vim-trailing-whitespace.git
-[submodule "bundle/vim-orgmode"]
-	path = bundle/vim-orgmode
-	url = https://github.com/jceb/vim-orgmode.git
 [submodule "bundle/vim-go"]
 	path = bundle/vim-go
 	url = https://github.com/fatih/vim-go.git 
@@ -37,9 +34,6 @@
 [submodule "bundle/NrrwRgn"]
 	path = bundle/NrrwRgn
 	url = https://github.com/chrisbra/NrrwRgn.git
-[submodule "bundle/DrawIt"]
-	path = bundle/DrawIt
-	url = https://github.com/vim-scripts/DrawIt.git
 [submodule "bundle/vim-ragtag"]
 	path = bundle/vim-ragtag
 	url = https://github.com/tpope/vim-ragtag
