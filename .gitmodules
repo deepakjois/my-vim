@@ -65,3 +65,6 @@
 	path = bundle/vim-ledger
 	url = https://github.com/ledger/vim-ledger
   
+[submodule "bundle/auto-pairs"]
+	path = bundle/auto-pairs
+	url = https://github.com/jiangmiao/auto-pairs.git
