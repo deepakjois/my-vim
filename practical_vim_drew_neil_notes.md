@@ -82,7 +82,7 @@ reverse the `f{char}` command.
 * `\`.` marks the position of last change.
 * `\`^` marks the positions of last change.
 * We need somehow to instruct Vim to modify the filepath under the cursor by
-  appending the .rb file extension before attempting to open it. We can do 
+  appending the .rb file extension before attempting to open it. We can do
   this with the `suffixesadd` option.
 
 ### Chapter 10 : Copy and paste
