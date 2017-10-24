@@ -155,3 +155,8 @@ inoremap <C-j>       <Down>
 let g:ragtag_global_maps = 1
 
 let g:jsx_ext_required=0
+
+" map key to command
+map <Leader>f :Find<space>
+
+command! -bang -nargs=* Find call fzf#vim#grep( 'rg --column --line-number --no-heading --fixed-strings --ignore-case --hidden --follow --color "always" '.shellescape(<q-args>), 1, <bang>0)
