@@ -41,11 +41,6 @@ endif
 "" Pathogen
 execute pathogen#infect()
 
-"" ctrl-p
-let g:ctrlp_custom_ignore = '\.git$\|\.hg$\|\.svn$\|_darcs\|_site\|node_modules'
-let g:ctrlp_working_path_mode = 'ra'
-let g:ctrlp_open_new_file = 'v'
-
 set t_Co=256
 set background=dark
 colorscheme solarized
@@ -75,7 +70,6 @@ endif
 
 let mapleader = ","
 nmap <leader>v :edit $MYVIMRC<CR>
-
 
 " easier navigation between split windows
 nnoremap <c-j> <c-w>j
@@ -145,6 +139,7 @@ let g:netrw_liststyle=3 " Use tree-mode as default view
 let g:netrw_browse_split=4
 let g:netrw_banner = 0
 let g:netrw_winsize = 25
+let g:netrw_altv = 1
 
 
 " Easier way to turn off search highlighting
@@ -162,5 +157,15 @@ let g:jsx_ext_required=0
 
 " map key to command
 map <Leader>f :Find<space>
+
+let g:rooter_change_directory_for_non_project_files = 'current'
+let g:rooter_use_lcd = 1
+let g:rooter_silent_chdir = 1
+let g:rooter_resolve_links = 1
+
+" <C-p> for files
+nnoremap <c-p> :FZF<cr>
+" <C-t> for open buffers
+nnoremap <silent> <c-t> :Buffers<cr>
 
 command! -bang -nargs=* Find call fzf#vim#grep( 'rg --column --line-number --no-heading --fixed-strings --ignore-case --hidden --follow --color "always" '.shellescape(<q-args>), 1, <bang>0)
