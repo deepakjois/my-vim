@@ -28,5 +28,5 @@ run:
 :%normal A;
 ```
 
-
+Delete buffer w/o closing window: `bp|bd #` (buffer previous, and then delete `#` alternate file)
 
