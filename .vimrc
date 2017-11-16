@@ -142,6 +142,10 @@ set wildmenu
 set wildmode=full
 
 let g:netrw_liststyle=3 " Use tree-mode as default view
+let g:netrw_browse_split=4
+let g:netrw_banner = 0
+let g:netrw_winsize = 25
+
 
 " Easier way to turn off search highlighting
 nnoremap <silent> <C-l> :<C-u>nohlsearch<CR><C-l>
