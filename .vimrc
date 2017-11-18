@@ -169,7 +169,7 @@ let g:rooter_resolve_links = 1
 " <C-p> for files
 nnoremap <c-p> :FZF<cr>
 " <C-t> for open buffers
-nnoremap <silent> <c-t> :Buffers<cr>
+nnoremap <leader>t :Buffers<cr>
 
 "Jump back to last edited buffer
 nnoremap <C-b> <C-^>
