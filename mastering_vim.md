@@ -30,3 +30,10 @@ run:
 
 Delete buffer w/o closing window: `bp|bd #` (buffer previous, and then delete `#` alternate file)
 
+### Make splits full height/width
+* Use `Ctrl-w _` to make a split full height. Use `Ctrl-w |` to make a split full width. Use `Ctrl-w =` to equalise all sizes.
+
+* Use `Ctrl-w q` to quit a split
+
+* User `:on` or `<C-w> o` to make the current split the only window
+
