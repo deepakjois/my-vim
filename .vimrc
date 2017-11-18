@@ -143,7 +143,7 @@ set wildmode=full
 
 " Delete any netrw buffers that accumulate,
 " when using vim-vinegar
-autocmd FileType netrw setl bufhidden=delete
+autocmd FileType netrw setl bufhidden=wipe
 
 " Easier way to turn off search highlighting
 nnoremap <silent> <C-l> :<C-u>nohlsearch<CR><C-l>
