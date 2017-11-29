@@ -24,6 +24,7 @@ set hidden
 
 "" Line numbers
 set number
+nnoremap <C-n> :set number!<CR>
 
 " Courtesy - https://github.com/DanToml/Dotfiles/blob/master/.vimrc
 " Integrate with system keyboard on Unix Systems.
