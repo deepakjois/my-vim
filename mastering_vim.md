@@ -44,3 +44,12 @@ Delete buffer w/o closing window: `bp|bd #` (buffer previous, and then delete `#
 set tw=80
 set wrap
 ```
+
+### Operating on search matches using gn
+
+
+http://vimcasts.org/episodes/operating-on-search-matches-using-gn/
+
+
+
+
