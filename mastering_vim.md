@@ -37,3 +37,10 @@ Delete buffer w/o closing window: `bp|bd #` (buffer previous, and then delete `#
 
 * User `:on` or `<C-w> o` to make the current split the only window
 
+
+### Word wrapping
+
+```
+set tw=80
+set wrap
+```
