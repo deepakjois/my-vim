@@ -44,10 +44,12 @@ execute pathogen#infect()
 
 set t_Co=256
 set background=dark
-colorscheme solarized
+"colorscheme solarized
 
 set cursorline
-set cursorcolumn
+hi CursorLine cterm=NONE ctermbg=darkgray ctermfg=white
+
+"set cursorcolumn
 
 " Clear vertical bar
 set fillchars+=vert:\│
