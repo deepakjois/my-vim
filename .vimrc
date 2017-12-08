@@ -182,3 +182,9 @@ nnoremap <C-b> <C-^>
 inoremap <C-b> <esc><C-^>
 
 command! -bang -nargs=* Find call fzf#vim#grep( 'rg --column --line-number --no-heading --fixed-strings --ignore-case --hidden --follow --color "always" '.shellescape(<q-args>), 1, <bang>0)
+
+"Change bindings for terminal mode in nvim
+if has('nvim')
+  tnoremap <Esc> <C-\><C-n>
+  tnoremap <C-v><Esc> <Esc>
+endif
