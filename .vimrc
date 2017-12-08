@@ -187,3 +187,7 @@ if has('nvim')
   tnoremap <Esc> <C-\><C-n>
   tnoremap <C-v><Esc> <Esc>
 endif
+
+" Show next matched string at the center of screen
+nnoremap n nzz
+nnoremap N Nzz
