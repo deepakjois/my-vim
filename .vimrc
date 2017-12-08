@@ -191,3 +191,6 @@ endif
 " Show next matched string at the center of screen
 nnoremap n nzz
 nnoremap N Nzz
+
+" Change paste toggle to a more convenient option
+set pastetoggle=<F2>
