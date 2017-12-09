@@ -50,7 +50,7 @@ let g:solarized_termtrans=1
 colorscheme solarized
 
 set cursorline
-hi CursorLine cterm=NONE ctermbg=darkgray ctermfg=white
+hi CursorLine cterm=NONE ctermbg=black ctermfg=none
 
 "set cursorcolumn
 
