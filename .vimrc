@@ -23,6 +23,7 @@ set smartcase                   " ... unless they contain at least one capital l
 set hidden
 
 "" Line numbers
+set nonumber
 nnoremap <C-n> :set number!<CR>
 
 " Courtesy - https://github.com/DanToml/Dotfiles/blob/master/.vimrc
