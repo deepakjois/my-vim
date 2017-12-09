@@ -59,16 +59,8 @@ hi CursorColumn cterm=none ctermbg=black ctermfg=none
 set fillchars+=vert:\│
 hi clear VertSplit
 
-"" Haskell
-" Configure browser for haskell_doc.vim
-let g:haddock_browser = "open"
-let g:haddock_browser_callformat = "%s %s"
-
 "" Org-mode
 let g:org_heading_shade_leading_stars = 1
-
-" on OS X, this leads to using system clipboard
-" set clipboard+=unnamed
 
 " Source the vimrc file after saving it
 if has("autocmd")
@@ -98,14 +90,6 @@ imap jj <Esc>
 " Insert a single character : http://vim.wikia.com/wiki/Insert_a_single_character
 ":nnoremap s :exec "normal i".nr2char(getchar())."\e"<CR>
 ":nnoremap S :exec "normal a".nr2char(getchar())."\e"<CR>
-
-" VimCasts #14: The :edit command
-cnoremap %% <C-R>=expand('%:h').'/'<cr>
-map <leader>ew :e %%
-map <leader>es :sp %%
-map <leader>ev :vsp %%
-map <leader>et :tabe %%
-
 
 " Don't show tab bar
 set showtabline=0
@@ -142,12 +126,6 @@ endfunction
 set wildmenu
 set wildmode=full
 
-"let g:netrw_liststyle=3 " Use tree-mode as default view
-"let g:netrw_browse_split=4
-"let g:netrw_banner = 0
-"let g:netrw_winsize = 25
-"let g:netrw_altv = 1
-
 " Delete any netrw buffers that accumulate,
 " when using vim-vinegar
 autocmd FileType netrw setl bufhidden=wipe
@@ -157,11 +135,6 @@ nnoremap <silent> <C-l> :<C-u>nohlsearch<CR><C-l>
 
 " format with goimports instead of gofmt
 let g:go_fmt_command = "goimports"
-
-" ragtag
-inoremap <M-o>       <Esc>o
-inoremap <C-j>       <Down>
-let g:ragtag_global_maps = 1
 
 let g:jsx_ext_required=0
 
