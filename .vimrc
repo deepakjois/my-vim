@@ -52,7 +52,8 @@ colorscheme solarized
 set cursorline
 hi CursorLine cterm=NONE ctermbg=black ctermfg=none
 
-"set cursorcolumn
+set cursorcolumn
+hi CursorColumn cterm=none ctermbg=black ctermfg=none
 
 " Clear vertical bar
 set fillchars+=vert:\│
