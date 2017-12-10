@@ -169,3 +169,7 @@ nnoremap N Nzz
 
 " Change paste toggle to a more convenient option
 set pastetoggle=<F2>
+
+" Goyo integration
+autocmd! User GoyoEnter Limelight
+autocmd! User GoyoLeave Limelight!
