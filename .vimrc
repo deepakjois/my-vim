@@ -124,7 +124,7 @@ endfunction
 
 
 set wildmenu
-set wildmode=full
+set wildmode=longest,list,full
 
 " Delete any netrw buffers that accumulate,
 " when using vim-vinegar
