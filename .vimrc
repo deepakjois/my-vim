@@ -207,3 +207,9 @@ autocmd! User GoyoLeave nested call <SID>goyo_leave()
 augroup pandoc_syntax
   au! BufNewFile,BufFilePre,BufRead *.md set filetype=markdown.pandoc
 augroup END
+
+" Easy splits: https://vimrcfu.com/snippet/242
+nnoremap <expr><silent> \| !v:count ? "<C-W>v<C-W><Right>" : '\|'
+nnoremap <expr><silent> _ !v:count ? "<C-W>s<C-W><Down>"  : '_'
+nnoremap <Tab> <C-W>w
+nnoremap <S-Tab> <C-W>W
