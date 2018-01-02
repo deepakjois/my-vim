@@ -70,12 +70,6 @@ endif
 let mapleader = ","
 nmap <leader>v :edit $MYVIMRC<CR>
 
-" easier navigation between split windows
-nnoremap <c-j> <c-w>j
-nnoremap <c-k> <c-w>k
-nnoremap <c-h> <c-w>h
-nnoremap <c-l> <c-w>l
-
 " Bubble single lines
 nmap <C-Up> [e
 nmap <C-Down> ]e
