@@ -42,12 +42,18 @@ endif
 "" Pathogen
 execute pathogen#infect()
 
-set t_Co=256
+"set t_Co=256
+"set background=dark
+"let g:solarized_termcolors=256
+"let g:solarized_contrast="high"
+"let g:solarized_termtrans=1
+"colorscheme solarized
+
+let g:solarized_use16 = 1
 set background=dark
-let g:solarized_termcolors=256
-let g:solarized_contrast="high"
-let g:solarized_termtrans=1
-colorscheme solarized
+let g:solarized_term_italics = 1
+let g:solarized_visibility = "high"
+colorscheme solarized8
 
 set cursorline
 hi CursorLine cterm=NONE ctermbg=black ctermfg=none

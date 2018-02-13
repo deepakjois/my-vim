@@ -86,3 +86,6 @@
 [submodule "bundle/limelight.vim"]
 	path = bundle/limelight.vim
 	url = https://github.com/junegunn/limelight.vim
+[submodule "bundle/vim-solarized8"]
+	path = bundle/vim-solarized8
+	url = https://github.com/lifepillar/vim-solarized8
