@@ -213,3 +213,11 @@ nnoremap <expr><silent> \| !v:count ? "<C-W>v<C-W><Right>" : '\|'
 nnoremap <expr><silent> _ !v:count ? "<C-W>s<C-W><Down>"  : '_'
 nnoremap <Tab> <C-W>w
 nnoremap <S-Tab> <C-W>W
+
+" From: https://kinbiko.com/vim/my-shiniest-vim-gems/
+set formatoptions+=j
+match ErrorMsg '\%>100v.\+'
+match ErrorMsg '\s\+$'
+vnoremap < <gv
+vnoremap > >gv
+
